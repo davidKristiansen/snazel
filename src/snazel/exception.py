@@ -1,0 +1,3 @@
+
+class MalformedRuleString(Exception):
+    pass

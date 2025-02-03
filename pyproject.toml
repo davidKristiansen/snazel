@@ -7,3 +7,18 @@ requires-python = ">=3.12"
 dependencies = [
     "pyyaml>=6.0.2",
 ]
+
+[project.scripts]
+snazel = "snazel.cli.snazel:run"
+
+[tool.uv]
+package = true
+dev-dependencies = [
+    "ruff>=0.9.1",
+]
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+target-version = "py312"
