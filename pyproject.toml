@@ -5,11 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "anyio>=4.8.0",
     "pyyaml>=6.0.2",
 ]
 
 [project.scripts]
-snazel = "snazel.cli.snazel:run"
+# snazel = "snazel.cli.snazel:run"
+snazel = "snazel.__main__:main"
 
 [tool.uv]
 package = true
@@ -18,7 +20,7 @@ dev-dependencies = [
 ]
 
 [tool.ruff]
-line-length = 120
+line-length = 80
 indent-width = 4
 
 target-version = "py312"

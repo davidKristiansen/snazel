@@ -2,7 +2,6 @@ import logging
 from graphlib import TopologicalSorter
 
 from snazel.rule import Rule
-from snazel.path import cwd
 
 logger = logging.getLogger(__name__)
 

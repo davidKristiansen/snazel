@@ -11,7 +11,6 @@ __app_name__ = data["project"]["name"]
 __version__ = data["project"]["version"]
 __description__ = data["project"]["description"]
 
-path = Path()
 
 class MalformedRuleString(Exception):
     pass
